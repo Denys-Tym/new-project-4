@@ -165,7 +165,7 @@ img {
 }
 
 .hero-container {
-  text-align: center;
+  display: flex;
 }
 
 .title {
@@ -317,6 +317,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-link:hover,
@@ -391,17 +392,11 @@ img {
 /* Footer styles */
 
 .footer-page {
-  display: flex;
   align-items: baseline;
   background: var(--NAVY-BLUE, #2e2f42);
   padding-top: 100px;
   padding-bottom: 100px;
-  margin-top: 0;
-  justify-content: center;
-}
-
-.footer-container {
-  margin-right: 120px;
+  margin: 0;
 }
 
 .footer-logo-down {
@@ -435,8 +430,14 @@ img {
 
 .footer-item-list {
   gap: 16px;
-  display: inline-flex;
   text-align: center;
+}
+
+.footer-social-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: baseline;
 }
 
 .footer-icon-link:hover,
