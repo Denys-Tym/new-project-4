@@ -393,6 +393,10 @@ img {
   margin-top: 0;
 }
 
+.footer-icon {
+  display: flex;
+}
+
 .footer-logo-down {
   color: var(--CLOUD, #f4f4fd);
 }
