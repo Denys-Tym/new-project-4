@@ -366,6 +366,7 @@ img {
 .ProjectCard {
   position: relative;
   overflow: hidden;
+  list-style-type: none;
 }
 
 .main-text {
@@ -393,10 +394,6 @@ img {
   margin-top: 0;
 }
 
-.footer-icon {
-  display: flex;
-}
-
 .footer-logo-down {
   color: var(--CLOUD, #f4f4fd);
 }
@@ -417,4 +414,32 @@ img {
 
 .path {
   fill: #4d5ae5;
+}
+
+.icon-list-footer {
+  display: flex;
+  list-style-type: none;
+  gap: 16px;
+}
+
+.social-text-footer {
+  color: var(--WHITE, #fff);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.footer-container-social {
+  display: block;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.page-footer {
 }
