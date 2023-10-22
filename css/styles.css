@@ -97,6 +97,16 @@ img {
   color: #2e2f42;
 }
 
+.header-item:hover::after {
+  content: "";
+  position: absolute;
+  left: o;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
+
 .header-nav {
   display: flex;
   align-items: center;
@@ -175,7 +185,9 @@ img {
   line-height: 1.07;
   letter-spacing: 0.02em;
   margin: 0 auto;
+  text-align: center;
 }
+
 .hero-btn {
   min-width: 169px;
   height: 56px;
@@ -351,9 +363,6 @@ img {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
-
-.main-images {
 }
 
 .portfolio-border {
