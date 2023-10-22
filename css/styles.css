@@ -95,6 +95,7 @@ img {
   display: block;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav {
@@ -105,10 +106,6 @@ img {
 .link-studio {
   color: #404bbf;
   position: relative;
-}
-
-.link-studio:hover {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-studio::after {
@@ -149,10 +146,7 @@ img {
 
 .header-contact {
   font-style: normal;
-}
-
-.header-contact:hover {
-  transition: color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact {
@@ -356,6 +350,36 @@ img {
   justify-content: space-between;
 }
 
+.ProjectCard {
+  position: relative;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+.ProjectCard:hover .projectcard-text {
+  transform: translateY(0%);
+}
+
+.projectcard-text {
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--CLOUD, #f4f4fd);
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100%);
+}
+
+.portfolio-item {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0%);
+}
+
 .portfolio-item:hover {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -376,12 +400,6 @@ img {
   align-items: center;
   border: 1px solid #e7e9fc;
   border-top: none;
-}
-
-.ProjectCard {
-  position: relative;
-  overflow: hidden;
-  list-style-type: none;
 }
 
 .main-text {
