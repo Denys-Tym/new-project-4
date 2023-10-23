@@ -351,17 +351,17 @@ img {
   justify-content: space-between;
 }
 
-.ProjectCard {
+.project-card {
   position: relative;
   overflow: hidden;
   list-style-type: none;
 }
 
-.ProjectCard:hover .projectcard-text {
+.project-card:hover .project-card-text {
   transform: translateY(0%);
 }
 
-.projectcard-text {
+.project-card-text {
   position: absolute;
   top: 0;
   font-size: 16px;
