@@ -492,7 +492,43 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe-container">
+          <p class="subscribe-text">Subscribe</p>
+          <form class="subscribe-form">
+            <label for="email-subscribe" class="subscribe-label">
+              <input
+                class="subscribe-email"
+                type="email"
+                name="email-subscribe"
+                placeholder="E-mail"
+                id="email-subscribe"
+              />
+            </label>
+            <button class="subscribe-button" type="submit">Subscribe</button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <!-- Modal Window -->
+
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button class="modal-button" type="button">
+          <svg class="modal-button-icon" width="8" height="8">
+            <use hreff=""></use>
+          </svg>
+        </button>
+        <p class="modal-text">Leave your contacts and we will call you back</p>
+        <form class="form-modal">
+          <div class="inputs-modal">
+            <label class="lable-modal" for="name-input">Name</label>
+            <div class="input-box">
+              <input class="input-modal" type="text" name="name-input" required id="name-input" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
